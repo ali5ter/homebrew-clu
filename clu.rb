@@ -5,21 +5,21 @@
 class Clu < Formula
   desc "A terminal interface for the commandlineuser.com CLI catalogue"
   homepage "https://commandlineuser.com"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ali5ter/clu/releases/download/v1.1.0/clu_darwin_amd64.tar.gz"
-      sha256 "5bf39d46c1e1476529565ac55f224c89200d7dc52f0f91ab740b124a785ad403"
+      url "https://github.com/ali5ter/clu/releases/download/v1.1.1/clu_darwin_amd64.tar.gz"
+      sha256 "dd04189c387a66cdfbf1cd8dc230a1863a3375a30b3eec783bb77eb964e16c07"
 
       define_method(:install) do
         bin.install "clu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ali5ter/clu/releases/download/v1.1.0/clu_darwin_arm64.tar.gz"
-      sha256 "ba3f529759d00c805fb758bb4dd737c7cc1a711d19235f0eef0ffbe7aaf0f66e"
+      url "https://github.com/ali5ter/clu/releases/download/v1.1.1/clu_darwin_arm64.tar.gz"
+      sha256 "7bd243d67c8b0fad4320f8c58df9d03506e69f66b9487576d28586acb6d49a92"
 
       define_method(:install) do
         bin.install "clu"
@@ -29,15 +29,15 @@ class Clu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ali5ter/clu/releases/download/v1.1.0/clu_linux_amd64.tar.gz"
-      sha256 "0f6a0fa9b2afe2f1363b99695fafe84bcad85c9f4efbbec0c68981f24fb0971f"
+      url "https://github.com/ali5ter/clu/releases/download/v1.1.1/clu_linux_amd64.tar.gz"
+      sha256 "1e6ecf218abf09b79e778584b9ecf30dd1ab11cc81374d4e6650a9145b545350"
       define_method(:install) do
         bin.install "clu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ali5ter/clu/releases/download/v1.1.0/clu_linux_arm64.tar.gz"
-      sha256 "168e2dd09cdd7a500c310c8e7cfb2365be4e2405f7c1bf80c64183ade5489895"
+      url "https://github.com/ali5ter/clu/releases/download/v1.1.1/clu_linux_arm64.tar.gz"
+      sha256 "ce463eef6a97c7015863a77bfb4cb40b3337290fe80b30b4e9468057c7c077c5"
       define_method(:install) do
         bin.install "clu"
       end

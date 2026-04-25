@@ -1,10 +1,16 @@
 # homebrew-clu
 
-Homebrew formulae for [clu](https://github.com/ali5ter/clu).
+Homebrew tap for [clu](https://github.com/ali5ter/clu) — a terminal interface for the commandlineuser.com CLI catalogue.
 
-## Usage
+## Install
 
 ```bash
-brew install ali5ter/clu/clu
+brew tap ali5ter/clu
+brew install clu
 ```
 
+## Upgrade
+
+```bash
+brew update && brew upgrade clu
+```
